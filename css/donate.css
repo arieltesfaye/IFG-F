@@ -1,0 +1,250 @@
+.donate {
+    background-color: #f8fafc;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.donate::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(66, 153, 225, 0.05) 0%, rgba(99, 179, 237, 0.05) 100%);
+    pointer-events: none;
+}
+
+/* Left side content styling */
+.section-header {
+    margin-bottom: 2rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #4299e1 0%, #667eea 100%);
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a202c;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.donate-text p {
+    font-size: 1.125rem;
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+/* Impact metrics */
+.impact-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.metric .number {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.metric .label {
+    font-size: 0.875rem;
+    color: #718096;
+}
+
+/* Donation form card */
+.donate-form-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.donate-form-card:hover {
+    transform: translateY(-5px);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    color: #718096;
+}
+
+/* Donation options */
+.donation-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.donation-option {
+    cursor: pointer;
+    margin: 0;
+}
+
+.donation-option input {
+    display: none;
+}
+
+.option-content {
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.donation-option input:checked + .option-content {
+    border-color: #4299e1;
+    background-color: #ebf8ff;
+}
+
+.option-content .amount {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.option-content .impact {
+    display: block;
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+/* Form inputs */
+.form-control {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4299e1;
+}
+
+/* Custom amount input */
+.custom-amount {
+    margin-bottom: 1.5rem;
+}
+
+/* Donate button */
+.donate-button {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #4299e1 0%, #667eea 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.donate-button:hover {
+    transform: translateY(-2px);
+}
+
+.button-icon {
+    transition: transform 0.3s ease;
+}
+
+.donate-button:hover .button-icon {
+    transform: translateX(4px);
+}
+
+/* Secure notice */
+.secure-notice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    color: #718096;
+    font-size: 0.875rem;
+}
+
+.lock-icon {
+    opacity: 0.5;
+}
+
+/* Responsive design */
+@media (max-width: 991px) {
+    .donate {
+        padding: 60px 0;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .impact-metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .col-lg-7 {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .donation-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-metrics {
+        grid-template-columns: 1fr;
+    }
+    
+    .metric {
+        text-align: center;
+        align-items: center;
+    }
+}
