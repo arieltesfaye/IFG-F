@@ -25,29 +25,28 @@
     </head>
 
     <body>
-        
-        
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+         <!-- Nav Bar Start -->
+         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">IFG-F</a>
+                <a href="index" class="navbar-brand">IFG-F</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index" class="nav-item nav-link active">Home</a>
                         
 
                         <div class="nav-item dropdown">
 
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
                             <div class="dropdown-menu">
-                                <a href="about.html#our-story" class="dropdown-item">Our Story</a>
-                                <a href="about.html#mission-&-vision" class="dropdown-item">Mission & Vision</a>
-                                <a href="about.html#our-team" class="dropdown-item">Our Team</a>
-                                <a href="about.html#partners" class="dropdown-item">Partners</a>
+                                <a href="about#our-story" class="dropdown-item">Our Story</a>
+                                <a href="about#mission&vision" class="dropdown-item">Mission & Vision</a>
+                                <a href="about#ourteam" class="dropdown-item">Our Team</a>
+                                <a href="about#partners" class="dropdown-item">Partners</a>
                             </div>
                         </div>
 
@@ -55,11 +54,11 @@
 
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Work</a>
                             <div class="dropdown-menu">
-                                <a href="single.html" class="dropdown-item">Climate Action</a>
-                                <a href="single.html" class="dropdown-item">Education Initiatives</a>
-                                <a href="single.html" class="dropdown-item">Healthcare Programs</a>
-                                <a href="single.html" class="dropdown-item">Social Care & Empowerment</a>
-                                <a href="single.html" class="dropdown-item">Community Development</a>
+                                <a href="single" class="dropdown-item">Climate Action</a>
+                                <a href="single" class="dropdown-item">Education Initiatives</a>
+                                <a href="single" class="dropdown-item">Healthcare Programs</a>
+                                <a href="single" class="dropdown-item">Social Care & Empowerment</a>
+                                <a href="single" class="dropdown-item">Community Development</a>
                             </div>
                         </div>
 
@@ -67,97 +66,107 @@
 
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Get Involved</a>
                             <div class="dropdown-menu">
-                                <a href="donate.html" class="dropdown-item">Donate</a>
-                                <a href="volunteer.html" class="dropdown-item">Become a Volunteer</a>
-                                <a href="fundraise.html" class="dropdown-item">Fundraise with Us</a>
-                                <a href="member.html" class="dropdown-item">Membership</a>
+                                <a href="donate" class="dropdown-item">Donate</a>
+                                <a href="volunteer" class="dropdown-item">Become a Volunteer</a>
+                                <a href="fundraise" class="dropdown-item">Fundraise with Us</a>
+                                <a href="member" class="dropdown-item">Membership</a>
                             </div>
                         </div>
 
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Programs & Impact</a>
                             <div class="dropdown-menu">
-                                <a href="service.html" class="dropdown-item">Current Projects</a>
-                                <a href="service.html" class="dropdown-item">Case Studies</a>
-                                <a href="service.html" class="dropdown-item">Impact Stories</a>
-                                <a href="causes.html" class="dropdown-item">Causes</a>
+                                <a href="service" class="dropdown-item">Current Projects</a>
+                                <a href="service" class="dropdown-item">Case Studies</a>
+                                <a href="service" class="dropdown-item">Impact Stories</a>
+                                <a href="causes" class="dropdown-item">Causes</a>
                             </div>
                         </div>
 
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog & News</a>
                             <div class="dropdown-menu">
-                                <a href="event.html" class="dropdown-item">Current Projects</a>
-                                <a href="blog.html" class="dropdown-item">Case Studies</a>
-                                <a href="blog.html" class="dropdown-item">Impact Stories</a>
+                                <a href="event" class="dropdown-item">Current Projects</a>
+                                <a href="blog" class="dropdown-item">Case Studies</a>
+                                <a href="blog" class="dropdown-item">Impact Stories</a>
                             </div>
                         </div>
                                                
                         <div class="carousel-btn">
-                            <a class="btn btn-custom" href="donate.html">Donate Now</a>
+                            <a class="btn btn-custom" href="donate">Donate Now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Nav Bar End -->
+
         
         <!-- Page Header Start -->
         <div class="page-header">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Contact Us</h2>
+                        <h2>Upcoming Events</h2>
                     </div>
                     <div class="col-12">
                         <a href="">Home</a>
-                        <a href="">Contact</a>
+                        <a href="">Events</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Page Header End -->
-
-        <!-- Contact Start -->
-        <div class="contact">
+        
+        <!-- Event Start -->
+        <div class="event">
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Get In Touch</p>
-                    <h2>Contact IFG-F for Any Queries</h2>
+                    <p>Upcoming Events</p>
+                    <h2>Join Our Upcoming Community Events</h2>
                 </div>
-                <div class="contact-img">
-                    <img src="img/contact.jpg" alt="Image">
-                </div>
-                <div class="contact-form">
-                    <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                            <p class="help-block text-danger"></p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="img/event-1.jpg" alt="Image">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>15-Nov-2024</p>
+                                    <p><i class="far fa-clock"></i>10:00 AM - 12:00 PM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Nairobi, Kenya</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Climate Action Workshop</h3>
+                                    <p>Join us for a workshop focused on community-based climate action initiatives and their impact on local environments.</p>
+                                    <a class="btn btn-custom" href="">Join Now</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                            <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="img/event-2.jpg" alt="Image">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>20-Dec-2024</p>
+                                    <p><i class="far fa-clock"></i>9:00 AM - 11:00 AM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Kisumu, Kenya</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Gender Equality Advocacy Program</h3>
+                                    <p>Participate in our program aimed at empowering women and advocating for gender-responsive climate action.</p>
+                                    <a class="btn btn-custom" href="">Join Now</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div>
-                            <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
+        <!-- Event End -->
 
         <!-- Footer Start -->
-         <div class="footer">
+        <div class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -178,21 +187,21 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link">
                             <h2>Popular Links</h2>
-                            <a href="about.html">About Us</a>
-                            <a href="contact.html">Contact Us</a>
-                            <a href="causes.html">Our Causes</a>
-                            <a href="events.html">Upcoming Events</a>
-                            <a href="blog.html">Latest Blog</a>
+                            <a href="about">About Us</a>
+                            <a href="contact">Contact Us</a>
+                            <a href="causes">Our Causes</a>
+                            <a href="events">Upcoming Events</a>
+                            <a href="blog">Latest Blog</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link">
                             <h2>Useful Links</h2>
-                            <a href="terms.html">Terms of Use</a>
-                            <a href="privacy.html">Privacy Policy</a>
-                            <a href="cookies.html">Cookies Policy</a>
-                            <a href="help.html">Help</a>
-                            <a href="faq.html">FAQs</a>
+                            <a href="terms">Terms of Use</a>
+                            <a href="privacy">Privacy Policy</a>
+                            <a href="cookies">Cookies Policy</a>
+                            <a href="help">Help</a>
+                            <a href="faq">FAQs</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
