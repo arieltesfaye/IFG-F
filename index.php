@@ -27,82 +27,10 @@
     </head>
 
     <body>
-
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">IFG-F</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse" >
-                    <div class="navbar-nav ml-auto" >
-                        <a href="index.html" class="nav-item nav-link active" >Home</a>
-                        
-
-                        <div class="nav-item dropdown">
-
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
-                            <div class="dropdown-menu">
-                                <a href="about.html#our-story" class="dropdown-item">Our Story</a>
-                                <a href="about.html#mission-&-vision" class="dropdown-item">Mission & Vision</a>
-                                <a href="about.html#our-team" class="dropdown-item">Our Team</a>
-                                <a href="about.html#partners" class="dropdown-item">Partners</a>
-                            </div>
-                        </div>
-
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Work</a>
-                            <div class="dropdown-menu">
-                                <a href="single.html#climate-action" class="dropdown-item">Climate Action</a>
-                                <a href="single.html#education-initiatives" class="dropdown-item">Education Initiatives</a>
-                                <a href="single.html#healthcare-programs" class="dropdown-item">Healthcare Programs</a>
-                                <a href="single.html#social-empowerment" class="dropdown-item">Social Empowerment</a>
-                                <a href="single.html#community-development" class="dropdown-item">Community Development</a>
-                            </div>
-                        </div>
-                        
-
-                        <div class="nav-item dropdown">
-
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Get Involved</a>
-                            <div class="dropdown-menu">
-                                <a href="donate.html" class="dropdown-item">Donate</a>
-                                <a href="volunteer.html" class="dropdown-item">Become a Volunteer</a>
-                                <a href="fundraise.html" class="dropdown-item">Fundraise with Us</a>
-                                <a href="member.html" class="dropdown-item">Membership</a>
-                            </div>
-                        </div>
-
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Programs & Impact</a>
-                            <div class="dropdown-menu">
-                                <a href="service.html" class="dropdown-item">Current Projects</a>
-                                <a href="service.html" class="dropdown-item">Case Studies</a>
-                                <a href="service.html" class="dropdown-item">Impact Stories</a>
-                                <a href="causes.html" class="dropdown-item">Causes</a>
-                            </div>
-                        </div>
-
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog & News</a>
-                            <div class="dropdown-menu">
-                                <a href="event.html" class="dropdown-item">Current Projects</a>
-                                <a href="single.html" class="dropdown-item">Case Studies</a>
-                                <a href="blog.html" class="dropdown-item">Impact Stories</a>
-                            </div>
-                        </div>
-                                               
-                        <div class="carousel-btn">
-                            <a class="btn btn-custom" href="donate.html">Donate Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Nav Bar End -->
-
+        <!-- import header -->
+        <?php
+        require('templates/navigation.php')
+        ?>
         <!-- Carousel Start -->
         <div class="carousel">
             <div class="container-fluid">
@@ -119,7 +47,7 @@
                                 We partner with resilient communities and individuals dedicated to creating lasting, sustainable change.
                             </p>
                             <div class="carousel-btn">
-                                <a class="btn btn-custom" href="donate.html">Donate Now</a>
+                                <a class="btn btn-custom" href="donate">Donate Now</a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +55,6 @@
             </div>
         </div>
         <!-- Carousel End -->
-
         <!-- About Start -->
         <div class="about">
             <div class="container">
@@ -148,7 +75,6 @@
                                 <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
                             </li>
                         </ul>
-
                         <div class="tab-content">
                             <div id="tab-content-1" class="container tab-pane active">
                                 IFG-F is a non-profit organization committed to working with communities to create lasting solutions. We focus on empowering vulnerable groups, promoting climate justice, and supporting sustainable development through education, capacity-building, and advocacy initiatives.
@@ -162,7 +88,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="about.html" class="see-more-link">See More</a>
+                        <a href="about" class="see-more-link">See More</a>
                     </div>
                 </div>
             </div>
@@ -176,7 +102,7 @@
                     <div class="carousel-text">
                         <h2>At IFG-F, we believe that true success is measured by the lives we uplift and the communities we empower. As we embark on this journey, we’re dedicated to building partnerships rooted in trust and collaboration. Our work focuses on unlocking potential, fostering sustainable development, and creating pathways for growth. Together, we aim to impact thousands—and ultimately, millions—as we lay the groundwork for lasting change.</h2>
                         <div class="carousel-btn">
-                            <a class="btn btn-custom" href="donate.html">Donate Now</a>
+                            <a class="btn btn-custom" href="donate">Donate Now</a>
                         </div>
                     </div>
                 </div>
@@ -202,8 +128,8 @@
                             <p>Supporting community-based climate action efforts to promote sustainable environmental practices.</p>
                         </div>
                         <div class="causes-btn">
-                            <a class="btn btn-custom" href="causes.html">Learn More</a>
-                            <a class="btn btn-custom" href="donate.html">Donate Now</a>
+                            <a class="btn btn-custom" href="causes">Learn More</a>
+                            <a class="btn btn-custom" href="donate">Donate Now</a>
                         </div>
                     </div>
                     <div class="causes-item">
@@ -216,8 +142,8 @@
                             <p>Championing gender equality and providing resources for women in marginalized communities.</p>
                         </div>
                         <div class="causes-btn">
-                            <a class="btn btn-custom" href="causes-detail.html">Learn More</a>
-                            <a class="btn btn-custom" href="donate.html">Donate Now</a>
+                            <a class="btn btn-custom" href="causes-detail">Learn More</a>
+                            <a class="btn btn-custom" href="donate">Donate Now</a>
                         </div>
                     </div>
                     <div class="causes-item">
@@ -230,8 +156,8 @@
                             <p>Providing educational opportunities for children and women in underprivileged areas.</p>
                         </div>
                         <div class="causes-btn">
-                            <a class="btn btn-custom" href="causes-detail.html">Learn More</a>
-                            <a class="btn btn-custom" href="donate.html">Donate Now</a>
+                            <a class="btn btn-custom" href="causes-detail">Learn More</a>
+                            <a class="btn btn-custom" href="donate">Donate Now</a>
                         </div>
                     </div>
                 </div>
@@ -321,7 +247,7 @@
                                     <p>
                                         Join our workshop to learn about climate justice and participate in community-led initiatives for environmental sustainability.
                                     </p>
-                                    <a class="btn btn-custom" href="events.html">Join Now</a>
+                                    <a class="btn btn-custom" href="events">Join Now</a>
                                 </div>
                             </div>
                         </div>
@@ -340,7 +266,7 @@
                                     <p>
                                         Join us in promoting gender equality through advocacy, education, and community engagement.
                                     </p>
-                                    <a class="btn btn-custom" href="events.html">Join Now</a>
+                                    <a class="btn btn-custom" href="events">Join Now</a>
                                 </div>
                             </div>
                         </div>
@@ -604,93 +530,10 @@
         </div>
         <!-- Blog End -->
 
-        <!-- Footer Start -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-contact">
-                            <h2>Our Head Office</h2>
-                            <p><i class="fa fa-map-marker-alt"></i>Nairobi, Kenya</p>
-                            <p><i class="fa fa-phone-alt"></i>+254 712 345 678</p>
-                            <p><i class="fa fa-envelope"></i>info@ifg-foundation.org</p>
-                            <div class="footer-social">
-                                <a class="btn btn-custom" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-custom" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-custom" href="#"><i class="fab fa-youtube"></i></a>
-                                <a class="btn btn-custom" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-custom" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-link">
-                            <h2>Popular Links</h2>
-                            <a href="about.html">About Us</a>
-                            <a href="contact.html">Contact Us</a>
-                            <a href="causes.html">Our Causes</a>
-                            <a href="events.html">Upcoming Events</a>
-                            <a href="blog.html">Latest Blog</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-link">
-                            <h2>Useful Links</h2>
-                            <a href="terms.html">Terms of Use</a>
-                            <a href="privacy.html">Privacy Policy</a>
-                            <a href="cookies.html">Cookies Policy</a>
-                            <a href="help.html">Help</a>
-                            <a href="faq.html">FAQs</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-newsletter">
-                            <h2>Newsletter</h2>
-                            <form>
-                                <input class="form-control" placeholder="Email goes here">
-                                <button class="btn btn-custom">Submit</button>
-                                <label>Don't worry, we don't spam!</label>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container copyright">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>&copy; IFG-F, All Rights Reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p>Designed By <a href="#">Leah Sigana</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
+        <!-- import header -->
+        <?php
+        require('templates/footer.php')
+        ?>
 
-        
-        <!-- Back to top button -->
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
-
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/parallax/parallax.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
     </body>
-</html>
+</html>       

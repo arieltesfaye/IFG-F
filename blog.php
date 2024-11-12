@@ -30,24 +30,24 @@
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">IFG-F</a>
+                <a href="index" class="navbar-brand">IFG-F</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index" class="nav-item nav-link active">Home</a>
                         
 
                         <div class="nav-item dropdown">
 
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
                             <div class="dropdown-menu">
-                                <a href="about.html#our-story" class="dropdown-item">Our Story</a>
-                                <a href="about.html#mission-&-vision" class="dropdown-item">Mission & Vision</a>
-                                <a href="about.html#our-team" class="dropdown-item">Our Team</a>
-                                <a href="about.html#partners" class="dropdown-item">Partners</a>
+                                <a href="about#our-story" class="dropdown-item">Our Story</a>
+                                <a href="about#mission&vision" class="dropdown-item">Mission & Vision</a>
+                                <a href="about#ourteam" class="dropdown-item">Our Team</a>
+                                <a href="about#partners" class="dropdown-item">Partners</a>
                             </div>
                         </div>
 
@@ -55,11 +55,11 @@
 
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Work</a>
                             <div class="dropdown-menu">
-                                <a href="single.html" class="dropdown-item">Climate Action</a>
-                                <a href="single.html" class="dropdown-item">Education Initiatives</a>
-                                <a href="single.html" class="dropdown-item">Healthcare Programs</a>
-                                <a href="single.html" class="dropdown-item">Social Care & Empowerment</a>
-                                <a href="single.html" class="dropdown-item">Community Development</a>
+                                <a href="single" class="dropdown-item">Climate Action</a>
+                                <a href="single" class="dropdown-item">Education Initiatives</a>
+                                <a href="single" class="dropdown-item">Healthcare Programs</a>
+                                <a href="single" class="dropdown-item">Social Care & Empowerment</a>
+                                <a href="single" class="dropdown-item">Community Development</a>
                             </div>
                         </div>
 
@@ -67,34 +67,34 @@
 
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Get Involved</a>
                             <div class="dropdown-menu">
-                                <a href="donate.html" class="dropdown-item">Donate</a>
-                                <a href="volunteer.html" class="dropdown-item">Become a Volunteer</a>
-                                <a href="fundraise.html" class="dropdown-item">Fundraise with Us</a>
-                                <a href="member.html" class="dropdown-item">Membership</a>
+                                <a href="donate" class="dropdown-item">Donate</a>
+                                <a href="volunteer" class="dropdown-item">Become a Volunteer</a>
+                                <a href="fundraise" class="dropdown-item">Fundraise with Us</a>
+                                <a href="member" class="dropdown-item">Membership</a>
                             </div>
                         </div>
 
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Programs & Impact</a>
                             <div class="dropdown-menu">
-                                <a href="service.html" class="dropdown-item">Current Projects</a>
-                                <a href="service.html" class="dropdown-item">Case Studies</a>
-                                <a href="service.html" class="dropdown-item">Impact Stories</a>
-                                <a href="causes.html" class="dropdown-item">Causes</a>
+                                <a href="service" class="dropdown-item">Current Projects</a>
+                                <a href="service" class="dropdown-item">Case Studies</a>
+                                <a href="service" class="dropdown-item">Impact Stories</a>
+                                <a href="causes" class="dropdown-item">Causes</a>
                             </div>
                         </div>
 
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog & News</a>
                             <div class="dropdown-menu">
-                                <a href="event.html" class="dropdown-item">Current Projects</a>
-                                <a href="blog.html" class="dropdown-item">Case Studies</a>
-                                <a href="blog.html" class="dropdown-item">Impact Stories</a>
+                                <a href="event" class="dropdown-item">Current Projects</a>
+                                <a href="blog" class="dropdown-item">Case Studies</a>
+                                <a href="blog" class="dropdown-item">Impact Stories</a>
                             </div>
                         </div>
                                                
                         <div class="carousel-btn">
-                            <a class="btn btn-custom" href="donate.html">Donate Now</a>
+                            <a class="btn btn-custom" href="donate">Donate Now</a>
                         </div>
                     </div>
                 </div>
@@ -634,21 +634,21 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link">
                             <h2>Popular Links</h2>
-                            <a href="about.html">About Us</a>
-                            <a href="contact.html">Contact Us</a>
-                            <a href="causes.html">Our Causes</a>
-                            <a href="events.html">Upcoming Events</a>
-                            <a href="blog.html">Latest Blog</a>
+                            <a href="about">About Us</a>
+                            <a href="contact">Contact Us</a>
+                            <a href="causes">Our Causes</a>
+                            <a href="events">Upcoming Events</a>
+                            <a href="blog">Latest Blog</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link">
                             <h2>Useful Links</h2>
-                            <a href="terms.html">Terms of Use</a>
-                            <a href="privacy.html">Privacy Policy</a>
-                            <a href="cookies.html">Cookies Policy</a>
-                            <a href="help.html">Help</a>
-                            <a href="faq.html">FAQs</a>
+                            <a href="terms">Terms of Use</a>
+                            <a href="privacy">Privacy Policy</a>
+                            <a href="cookies">Cookies Policy</a>
+                            <a href="help">Help</a>
+                            <a href="faq">FAQs</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
