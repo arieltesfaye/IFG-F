@@ -29,7 +29,7 @@
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
-                <a href="index" class="navbar-brand">IFG-F</a>
+                <a href="index" class="navbar-brand">IFG</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -112,7 +112,7 @@
 
                             <h2>EVERY DONATION COUNTS</h2>
                             <p>
-                                At IFG-F, we believe in maximizing the impact of every donation. Every dollar you contribute directly funds our work in sustainable community development, climate action, education, and social empowerment. With zero cuts for overhead, we ensure that 100% of your support goes straight to the communities we serve. Join us in creating a lasting difference—every contribution makes a world of impact.
+                                At IFG, we believe in maximizing the impact of every donation. Every dollar you contribute directly funds our work in sustainable community development, climate action, education, and social empowerment. With zero cuts for overhead, we ensure that 100% of your support goes straight to the communities we serve. Join us in creating a lasting difference—every contribution makes a world of impact.
                             </p>
 
                         </div>
@@ -155,7 +155,7 @@
                             <h2>Our Head Office</h2>
                             <p><i class="fa fa-map-marker-alt"></i>Nairobi, Kenya</p>
                             <p><i class="fa fa-phone-alt"></i>+254 712 345 678</p>
-                            <p><i class="fa fa-envelope"></i>info@ifg-foundation.org</p>
+                            <p><i class="fa fa-envelope"></i>info@IFGoundation.org</p>
                             <div class="footer-social">
                                 <a class="btn btn-custom" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-custom" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -200,7 +200,7 @@
             <div class="container copyright">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>&copy; IFG-F, All Rights Reserved.</p>
+                        <p>&copy; IFG, All Rights Reserved.</p>
                     </div>
                     <div class="col-md-6">
                         <p>Designed By <a href="#">Leah Sigana</a></p>
