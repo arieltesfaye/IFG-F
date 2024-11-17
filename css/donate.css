@@ -1,250 +1,1726 @@
-.donate {
-    background-color: #f8fafc;
-    padding: 100px 0;
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+/*#e904c9 & #3f115a*/
+
+body {
+    color: #777777;
+    font-weight: 500;
+    background: #ffffff;
+    font-family: 'Spartan', sans-serif;
+    
+}
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #4a4c70;
+}
+a {
+    color: #4a4c70;
+    transition: .3s;
+}
+a:hover,
+a:active,
+a:focus {
+    color: #3f115a;
+    outline: none;
+    text-decoration: none;
+}
+.btn.btn-custom {
+    padding: 12px 20px;
+    text-align: center; 
+   font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #3f115a;
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: inset 0 0 0 0 #3f115a;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+.btn.btn-custom:hover {
+    color: #20212B;
+    box-shadow: inset 0 0 0 30px #3f115a;
+}
+.btn:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+.container-fluid {
+    max-width: 1366px;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-size: inherit;
+    margin-left: 0;
+}
+/****** Loader & Back to Top ******/
+#loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    -o-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    transition: opacity .3s ease-out, visibility 0s linear .3s;
+    z-index: 999;
+}
+#loader.show {
+    -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    transition: opacity .6s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+#loader .loader {
     position: relative;
+    width: 45px;
+    height: 45px;
+    border: 5px solid #dddddd;
+    border-top: 5px solid #3f115a;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #3f115a;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+.back-to-top i {
+    color: #4a4c70;
+    padding-top: 10px;
+}
+.back-to-top:hover {
+    background: #4a4c70;
+}
+.back-to-top:hover i {
+    color: #3f115a;
+}
+/*********** Nav Bar CSS ***********/
+.navbar {
+    position: fixed; /* Sticky navbar at the top */
+    top: 0;
+    width: 100%; /* Full-width navbar */
+    z-index: 999; /* High z-index to ensure it appears above other elements */
+    background: white; /* White background for the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3); /* Subtle shadow for a floating effect */
+    padding: 0 60px; /* Horizontal padding */
+    min-height: 100px; /* Ensures the navbar has sufficient height */
+    display: flex; /* Flex layout for proper alignment */
+    align-items: center; /* Centers the content vertically */
+}
+
+/* Branding and Logo */
+.navbar .navbar-brand {
+    margin: 0; /* Removes extra spacing */
+    color: #20212B; /* Dark font color */
+    font-size: 30px; /* Adjust font size for the brand text */
+    font-weight: 400; /* Normal font weight */
+    letter-spacing: 5px; /* Letter spacing for visual appeal */
+    text-transform: uppercase; /* Converts text to uppercase */
+}
+.navbar .navbar-brand img {
+    max-width: 100%; /* Ensures the image does not exceed container width */
+    max-height: 40px; /* Restricts image height for consistent sizing */
+}
+
+/* Navbar Links */
+.navbar .navbar-nav .nav-link {
+    color: #20212B; /* Dark gray link color */
+    padding: 10px 15px; /* Padding for better spacing */
+    font-size: 16px; /* Readable font size */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Hover and Active Link States */
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: #3f115a; /* Highlight color for hover and active links */
+    text-decoration: underline; /* Underlines active or hovered links */
+}
+
+/* Dropdown Menu */
+.navbar .dropdown-menu {
+    margin-top: 0; /* Aligns the dropdown directly under the parent */
+    border: 0; /* Removes border around dropdown */
+    border-radius: 0; /* Removes rounded corners */
+    background: white; /* Light background for dropdown */
+    box-shadow: none; /* Clean and simple design */
+}
+.navbar .dropdown-item {
+    color: #20212B; /* Dark font color for dropdown items */
+    padding: 10px 20px; /* Spacing for dropdown items */
+}
+.navbar .dropdown-item:hover {
+    color: #3f115a; /* Highlight dropdown links on hover */
+    background: rgba(0, 0, 0, 0.05); /* Subtle background on hover */
+}
+
+/* Large Screens */
+@media (min-width: 992px) {
+    .navbar {
+        padding: 0 60px; /* Adjusts horizontal padding */
+        min-height: 100px; /* Maintains height for large screens */
+    }
+    .navbar .navbar-nav .nav-link {
+        font-size: 16px; /* Larger font size for better readability */
+        padding: 10px 20px; /* Adjusted padding for desktop */
+    }
+}
+
+/* Medium Screens */
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 0 20px; /* Reduces padding for smaller screens */
+        min-height: 70px; /* Slightly smaller height */
+    }
+    .navbar .navbar-nav .nav-link {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+    .navbar .dropdown-menu {
+        background: white; /* White background for dropdowns */
+    }
+}
+
+/* Small Screens (iPhone-specific adjustments) */
+@media (max-width: 575.98px) {
+    .navbar {
+        padding: 0 10px; /* Minimal padding for compact layout */
+        min-height: 65px; /* Smallest height for small screens */
+    }
+    .navbar .navbar-nav .nav-link {
+        font-size: 14px; /* Smaller font size for small screens */
+    }
+}
+
+/********** Hero CSS ***********/
+.carousel {
+    position: relative; /* Ensures the carousel is properly placed in the document flow. */
+    width: 100%; /* Full-width carousel. */
+    min-height: 200px; /* Ensures a minimum height for the carousel. */
+    background: #ffffff; /* White background in case images don't load. */
+    margin-bottom: 30px; /* Space below the carousel. */
+    padding-top: 100px; /* Ensures proper spacing from the top of the page. */
+}
+.carousel .container-fluid {
+    padding: 0; /* Removes default container padding for edge-to-edge content. */
+}
+.carousel .carousel-item {
+    position: relative; /* Positions content relative to its container. */
+    width: 100%; /* Full-width item. */
+    min-height: 200px; /* Consistent height for each item. */
+    display: flex; /* Flexbox layout for centering content. */
+    align-items: center; /* Vertically centers the content. */
+    justify-content: center; /* Horizontally centers the content. */
+    flex-direction: column; /* Stacks content vertically. */
+}
+.carousel .carousel-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 450px; /* Restricts the image height for consistency. */
+    overflow: hidden; /* Ensures content doesn't overflow the container. */
+}
+.carousel .carousel-img::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+.carousel .carousel-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image scales without distortion. */
+}
+.carousel .carousel-text {
+    position: absolute; /* Positioned over the image. */
+    max-width: 600px; /* Restricts the width of the text block. */
+    padding: 0 20px; /* Adds inner padding for smaller screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2; /* Ensures the text appears above the image. */
+}
+.carousel .carousel-text h1 {
+    text-align: center;
+    color: #ffffff; /* White text for contrast. */
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.carousel .carousel-text h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.carousel .carousel-text p {
+    color: #ffffff;
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-bottom: 25px;
+}
+.carousel .carousel-btn .btn.btn-custom {
+    color: #ffffff; /* White text for buttons. */
+    background: #3f115a; /* Branded button color */
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.carousel .carousel-btn .btn.btn-custom:hover {
+    color: #20212B; /* Dark hover effect for buttons. */
+    background: #20212B;
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+.carousel .carousel-btn .btn:first-child {
+    margin-right: 15px;
+}
+
+.carousel .owl-nav {
+    position: absolute; /* Positions navigation on top of the carousel. */
+    width: 100%;
+    height: 60px;
+    top: calc(50% - 30px);  /* Centers navigation vertically. */
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9; /* Ensures navigation appears above other elements. */
+}
+.carousel .owl-nav .owl-prev,
+.carousel .owl-nav .owl-next {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3f115a; /* Primary brand color for arrows. */
+    background: rgba(256, 256, 256, .2); /* Semi-transparent background. */
+    font-size: 22px;
+    transition: .3s; /* Smooth transition for hover effects. */
+}
+.carousel .owl-nav .owl-prev:hover,
+.carousel .owl-nav .owl-next:hover {
+    color: #ffffff; /* White arrows on hover. */
+    background: #3f115a; /* Brand color background on hover. */
+}
+.carousel .owl-nav .owl-prev {
+    margin-right: 2px;
+}
+.carousel .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+#videoModal .modal-dialog {
+    position: relative;
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+}
+
+#videoModal .modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+#videoModal .close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0px;
+    top: -30px;
+    z-index: 999;
+    font-size: 30px;
+    font-weight: normal;
+    color: #ffffff;
+    background: #000000;
+    opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+    .carousel {
+        padding-top: 100px; /* Adjust spacing for medium screens. */
+    }
+
+    .carousel .carousel-text h1 {
+        font-size: 35px; /* Smaller font size for medium screens. */
+    }
+    
+    .carousel .carousel-text p {
+        font-size: 16px; /* Smaller paragraph text. */
+    }
+    
+    .carousel .carousel-text .btn {
+        padding: 12px 30px;
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .carousel {
+        padding-top: 80px; /* Reduced padding for small screens. */
+    }
+    .carousel .carousel-text {
+        padding: 20px; /* Adds breathing room around text */
+        text-align: left; /* Aligns text better for small devices */
+    }
+    .carousel .carousel-text h1 {
+        font-size: 30px; /* Adjust headline size. */
+    }
+    
+    .carousel .carousel-text .btn {
+        padding: 10px 25px;
+        font-size: 15px; /* Adjust paragraph size. */
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .carousel {
+        padding-top: 60px; /* Minimal padding for very small screens. */
+    }
+
+    .carousel .carousel-text h1 {
+        font-size: 1.5rem;
+    }
+    .carousel .carousel-text p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .carousel .carousel-text .btn {
+        padding: 10px 20px; /* Compact buttons for small screens. */
+        font-size: 0.9rem;
+        letter-spacing: 0;
+    }
+       
+}
+@media (min-width: 390px) and (max-width: 430px) { /* iPhone 14-specific */
+    .carousel {
+        padding-top: 70px;
+    }
+}
+
+.scroll-prompt {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FfffFF;
+    animation: bounce 1.5s infinite; /* Adds subtle movement */
+}
+
+
+
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 210px 0 90px 0;
+    text-align: center;
     overflow: hidden;
 }
 
-.donate::before {
-    content: '';
+.page-header-bg {
     position: absolute;
-    top: 0;
+    top: 145px;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(66, 153, 225, 0.05) 0%, rgba(99, 179, 237, 0.05) 100%);
-    pointer-events: none;
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/page-header1b.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1; /* Ensures the image stays behind the text */
 }
 
-/* Left side content styling */
-.section-header {
-    margin-bottom: 2rem;
-}
 
-.badge {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, #4299e1 0%, #667eea 100%);
+.page-header h2 {
+    position: relative;
     color: white;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 0.875rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.section-header h2 {
-    font-size: 2.5rem;
+    font-size: 30px;
     font-weight: 700;
-    color: #1a202c;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
 }
 
-.donate-text p {
-    font-size: 1.125rem;
-    color: #4a5568;
-    line-height: 1.7;
-    margin-bottom: 2rem;
+.page-header h2::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    left: calc(50% - 50px);
+    bottom: 0;
+    background: #3f115a;
 }
 
-/* Impact metrics */
-.impact-metrics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
+.page-header a {
+    position: relative;
+    padding: 0 12px;
+    font-size: 22px;
+    color: #ffffff;
 }
 
-.metric {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.metric .number {
-    font-size: 1.875rem;
+.page-header p {
+    position: relative;
+    color: white;
+    font-size: 20px;
     font-weight: 700;
-    color: #2d3748;
-    margin-bottom: 0.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
 }
 
-.metric .label {
-    font-size: 0.875rem;
-    color: #718096;
+.page-header a:hover {
+    color: #3f115a;
 }
 
-/* Donation form card */
-.donate-form-card {
-    background: white;
-    border-radius: 16px;
-    padding: 2rem;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-    transform: translateY(0);
-    transition: transform 0.3s ease;
-}
-
-.donate-form-card:hover {
-    transform: translateY(-5px);
-}
-
-.form-header {
+.page-header a::after {
+    position: absolute;
+    content: "/";
+    width: 8px;
+    height: 8px;
+    top: -2px;
+    right: -7px;
     text-align: center;
-    margin-bottom: 2rem;
+    color: #ffffff;
 }
 
-.form-header h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2d3748;
-    margin-bottom: 0.5rem;
-}
-
-.form-header p {
-    color: #718096;
-}
-
-/* Donation options */
-.donation-options {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.donation-option {
-    cursor: pointer;
-    margin: 0;
-}
-
-.donation-option input {
+.page-header a:last-child::after {
     display: none;
 }
 
-.option-content {
-    border: 2px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 1rem;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.donation-option input:checked + .option-content {
-    border-color: #4299e1;
-    background-color: #ebf8ff;
-}
-
-.option-content .amount {
-    display: block;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #2d3748;
-    margin-bottom: 0.5rem;
-}
-
-.option-content .impact {
-    display: block;
-    font-size: 0.75rem;
-    color: #718096;
-}
-
-/* Form inputs */
-.form-control {
-    width: 100%;
-    padding: 0.875rem 1rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-    margin-bottom: 1rem;
-}
-
-.form-control:focus {
-    outline: none;
-    border-color: #4299e1;
-}
-
-/* Custom amount input */
-.custom-amount {
-    margin-bottom: 1.5rem;
-}
-
-/* Donate button */
-.donate-button {
-    width: 100%;
-    padding: 1rem;
-    background: linear-gradient(135deg, #4299e1 0%, #667eea 100%);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    transition: transform 0.3s ease;
-}
-
-.donate-button:hover {
-    transform: translateY(-2px);
-}
-
-.button-icon {
-    transition: transform 0.3s ease;
-}
-
-.donate-button:hover .button-icon {
-    transform: translateX(4px);
-}
-
-/* Secure notice */
-.secure-notice {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    color: #718096;
-    font-size: 0.875rem;
-}
-
-.lock-icon {
-    opacity: 0.5;
-}
-
-/* Responsive design */
-@media (max-width: 991px) {
-    .donate {
+@media (max-width: 991.98px) {
+    .page-header {
         padding: 60px 0;
     }
     
-    .section-header h2 {
-        font-size: 2rem;
+    .page-header h2 {
+        font-size: 45px;
     }
     
-    .impact-metrics {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .col-lg-7 {
-        margin-bottom: 3rem;
+    .page-header a {
+        font-size: 20px;
     }
 }
 
-@media (max-width: 767px) {
-    .donation-options {
-        grid-template-columns: 1fr;
+@media (max-width: 767.98px) {
+    .page-header {
+        padding: 45px 0;
     }
     
-    .impact-metrics {
-        grid-template-columns: 1fr;
+    .page-header h2 {
+        font-size: 35px;
     }
     
-    .metric {
-        text-align: center;
-        align-items: center;
+    .page-header a {
+        font-size: 18px;
     }
 }
+
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 45px auto;
+}
+
+.section-header p {
+    margin-bottom: 5px;
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #3f115a;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 700;
+    color: #333333;
+}
+
+@media (max-width: 991.98px) {
+    .section-header h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-header h2 {
+        font-size: 35px;
+    }
+}
+
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+    
+}
+
+.about .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+.about .section-header p{
+    font-size: 20px;
+    color: #3f115a;
+}
+
+.about .section-header h2{
+    font-size: 20px;
+    color: #333333;
+}
+.about about-header h2{
+    font-size: 40px;
+}
+
+
+.see-more-link {
+    color: #3f115a;
+    text-decoration: underline;
+    padding-top: 20px;
+  }
+.about .about-img {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+.about .about-tab {
+    width: 100%;
+}
+
+.about .about-tab .nav.nav-pills .nav-link {
+    padding: 8px;
+    font-weight: 600;
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    transition: none;
+}
+
+.about .about-tab .nav.nav-pills .nav-link:hover,
+.about .about-tab .nav.nav-pills .nav-link.active {
+    color: #3f115a;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #3f115a;
+}
+
+.about .about-tab .tab-content {
+    padding: 15px 0 0 0;
+    background: transparent;
+}
+
+.about .about-tab .tab-content .container {
+    padding: 0;
+}
+
+@media (max-width: 991.98px) {
+    .about .section-header {
+        margin-top: 30px;
+    }
+}
+
+
+/*******************************/
+/********* Service CSS *********/
+/*******************************/
+.service {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.service .service-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    transition: .3s;
+}
+
+.service .service-icon {
+    position: relative;
+    width: 60px;
+}
+
+.service .service-icon i {
+    position: relative;
+    display: block;
+    color: #3f115a;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 5px;
+}
+
+.service .service-text {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.service .service-text::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: calc(100% - 10px);
+    top: 5px;
+    left: 0;
+    background: rgba(0, 0, 0, .1);
+}
+
+.service .service-text::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 40px;
+    top: calc(50% - 20px);
+    left: -1px;
+    background: #3f115a;
+}
+
+.service .service-text h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.service .service-text p {
+    margin: 0;
+}
+
+
+
+
+/*******************************/
+/********** Causes CSS *********/
+/*******************************/
+.causes {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.causes .causes-carousel {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.causes .causes-item {
+    margin: 0 15px;
+    overflow: hidden;
+    background: #f3f6ff;
+}
+
+.causes .causes-img {
+    overflow: hidden;
+}
+
+.causes .causes-img img {
+    width: 100%;
+    transition: .3s;
+}
+
+.causes .causes-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.causes .causes-progress {
+    width: 100%;
+    margin-top: 32px;
+    padding: 30px 30px 20px 30px;
+}
+
+.causes .progress {
+    height: 10px;
+    border-radius: 0;
+    background: #dddddd;
+    overflow: visible;
+}
+
+.causes .progress .progress-bar {
+    position: relative;
+    width: 0px;
+    background: #3f115a;
+    overflow: visible;
+    transition: 2s;
+}
+
+.causes .progress-bar span {
+    position: absolute;
+    top: -32px;
+    right: 0;
+    height: 23px;
+    display: inline-block;
+    padding: 2px 6px;
+    background: #3f115a;
+    color: #20212B;
+}
+
+.causes .progress-bar span::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 23px;
+    left: calc(50% - 6px);
+    border: 6px solid;
+    border-color: #3f115a transparent transparent transparent;
+}
+
+.causes .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+.causes .section-header p{
+    font-size: 20px;
+    color: #3f115a;
+}
+
+.causes .section-header h2{
+    font-size: 20px;
+    color: #333333;
+}
+.causes about-header h2{
+    font-size: 40px;
+}
+
+@media (max-width: 991.98px) {
+    .causes .section-header {
+        margin-top: 30px;
+    }
+}
+.causes .progress-text {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.causes .progress-text p {
+    margin: 0;
+}
+
+.causes .causes-text {
+    padding: 20px 30px;
+}
+
+.causes .causes-text h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.causes .causes-text p {
+    margin: 0;
+}
+
+.causes .causes-btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.causes .causes-btn .btn {
+    padding: 10px 0;
+    width: 50%;
+}
+
+.causes .causes-btn .btn:last-child {
+    color: #20212B;
+    background: #3f115a;
+}
+
+.causes .causes-btn .btn:last-child:hover {
+    color: #ffffff;
+}
+
+
+
+/*******************************/
+/********** Facts CSS **********/
+/*******************************/
+.facts {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    margin: 45px 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+}
+
+.facts .facts-item {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0;
+}
+
+.facts .facts-item i {
+    margin-top: 10px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #3f115a;
+}
+
+.facts .facts-text {
+    padding-left: 20px;
+}
+
+.facts .facts-text h3 {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.facts .facts-text h3::after {
+    position: absolute;
+    top: 0px;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.facts .facts-text h3.facts-plus::after {
+    content: "\f067";
+    right: -25px;
+}
+
+.facts .facts-text h3.facts-dollar::after {
+    content: "\f155";
+    right: -18px;
+}
+
+.facts .facts-text p {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.facts .carousel-text {
+    width: 70%;  /* Sets the width to occupy half the page */
+    text-align: center;
+    padding: 5px;
+}
+
+.facts .carousel-text h2 {
+    color: white;
+    font-size: 15px;
+}
+
+
+/*******************************/
+/******* Single Post CSS *******/
+/*******************************/
+.single {
+    position: relative;
+    padding: 145px 0;
+}
+
+.single .single-content {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.single .single-content img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.single .single-tags {
+    margin: -5px -5px 41px -5px;
+    font-size: 0;
+}
+
+.single .single-tags a {
+    margin: 5px;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a4c70;
+    border: 1px solid #4a4c70;
+}
+
+.single .single-tags a:hover {
+    color: #ffffff;
+    background: #3f115a;
+    border-color: #3f115a;
+}
+
+.single .single-bio {
+    margin-bottom: 45px;
+    padding: 30px;
+    background: #f3f6ff;
+    display: flex;
+}
+
+.single .single-bio-img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.single .single-bio-img img {
+    width: 100%;
+    border: 15px solid #ffffff;
+}
+
+.single .single-bio-text {
+    padding-left: 30px;
+}
+
+.single .single-bio-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.single .single-bio-text p {
+    margin: 0;
+}
+
+.single .single-related {
+    margin-bottom: 45px;
+}
+
+.single .single-related h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.single .related-slider {
+    position: relative;
+    margin: 0 -15px;
+    width: calc(100% + 30px);
+}
+
+.single .related-slider .post-item {
+    margin: 0 15px;
+}
+
+.single .post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.single .post-item .post-img {
+    width: 100%;
+    max-width: 80px;
+}
+
+.single .post-item .post-img img {
+    width: 100%;
+}
+
+.single .post-item .post-text {
+    padding-left: 15px;
+}
+
+.single .post-item .post-text a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.single .post-item .post-text a:hover {
+    color: #3f115a;
+}
+
+.single .post-item .post-meta {
+    display: flex;
+    margin-top: 8px;
+}
+
+.single .post-item .post-meta p {
+    display: inline-block;
+    margin: 0;
+    padding: 0 3px;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.single .post-item .post-meta p a {
+    margin-left: 5px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.single .related-slider .owl-nav {
+    position: absolute;
+    width: 90px;
+    top: -55px;
+    right: 15px;
+    display: flex;
+}
+
+.single .related-slider .owl-nav .owl-prev,
+.single .related-slider .owl-nav .owl-next {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4a4c70;
+    background: #3f115a;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.single .related-slider .owl-nav .owl-prev:hover,
+.single .related-slider .owl-nav .owl-next:hover {
+    color: #3f115a;
+    background: #4a4c70;
+}
+
+.single .single-comment {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.single .single-comment h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.single .comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.single .comment-child {
+    list-style: none;
+}
+
+.single .comment-body {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.single .comment-img {
+    width: 60px;
+}
+
+.single .comment-img img {
+    width: 100%;
+    border-radius: 0;
+}
+
+.single .comment-text {
+    padding-left: 15px;
+    width: calc(100% - 60px);
+}
+
+.single .comment-text h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.single .comment-text span {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.single .comment-text .btn {
+    padding: 3px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a4c70;
+    background: #dddddd;
+    border-radius: 0;
+}
+
+.single .comment-text .btn:hover {
+    background: #3f115a;
+}
+
+.single .comment-form {
+    position: relative;
+}
+
+.single .comment-form h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.single .comment-form form {
+    padding: 30px;
+    background: #f3f6ff;
+}
+
+.single .comment-form form .form-group:last-child {
+    margin: 0;
+}
+
+.single .comment-form input,
+.single .comment-form textarea {
+    border-radius: 0;
+}
+
+.single .comment-form input:focus,
+.single .comment-form textarea:focus {
+    border-color: #3f115a;
+}
+
+
+/**********************************/
+/*********** Sidebar CSS **********/
+/**********************************/
+.sidebar {
+    position: relative;
+    width: 100%;
+}
+
+@media(max-width: 991.98px) {
+    .sidebar {
+        margin-top: 45px;
+    }
+}
+
+.sidebar .sidebar-widget {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.sidebar .sidebar-widget .widget-title {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.sidebar .sidebar-widget .widget-title::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #3f115a;
+}
+
+.sidebar .sidebar-widget .search-widget {
+    position: relative;
+}
+
+.sidebar .search-widget input {
+    height: 50px;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+}
+
+.sidebar .search-widget input:focus {
+    box-shadow: none;
+    border-color: #3f115a;
+}
+
+.sidebar .search-widget .btn {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    height: 40px;
+    padding: 0;
+    font-size: 25px;
+    color: #3f115a;
+    background: none;
+    border-radius: 0;
+    border: none;
+    transition: .3s;
+}
+
+.sidebar .search-widget .btn:hover {
+    color: #4a4c70;
+}
+
+.sidebar .sidebar-widget .recent-post {
+    position: relative;
+}
+
+.sidebar .sidebar-widget .tab-post {
+    position: relative;
+}
+
+.sidebar .tab-post .nav.nav-pills .nav-link {
+    color: #4a4c70;
+    background: #3f115a;
+    border-radius: 0;
+}
+
+.sidebar .tab-post .nav.nav-pills .nav-link:hover,
+.sidebar .tab-post .nav.nav-pills .nav-link.active {
+    color: #3f115a;
+    background: #4a4c70;
+}
+
+.sidebar .tab-post .tab-content {
+    padding: 15px 0 0 0;
+    background: transparent;
+}
+
+.sidebar .tab-post .tab-content .container {
+    padding: 0;
+}
+
+.sidebar .sidebar-widget .category-widget {
+    position: relative;
+}
+
+.sidebar .category-widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar .category-widget ul li {
+    margin: 0 0 12px 22px; 
+}
+
+.sidebar .category-widget ul li:last-child {
+    margin-bottom: 0; 
+}
+
+.sidebar .category-widget ul li a {
+    display: inline-block;
+    line-height: 23px;
+}
+
+.sidebar .category-widget ul li::before {
+    position: absolute;
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #3f115a;
+    left: 1px;
+}
+
+.sidebar .category-widget ul li span {
+    display: inline-block;
+    float: none;
+}
+
+.sidebar .sidebar-widget .tag-widget {
+    position: relative;
+    margin: -5px -5px;
+}
+
+.single .tag-widget a {
+    margin: 5px;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a4c70;
+    border: 1px solid #4a4c70;
+    border-radius: 0;
+}
+
+.single .tag-widget a:hover {
+    color: #ffffff;
+    background: #3f115a;
+    border-color: #3f115a;
+}
+
+.sidebar .image-widget {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar .image-widget img {
+    max-width: 100%;
+    transition: .3s;
+}
+
+.sidebar .image-widget img:hover {
+    transform: scale(1.1);
+}
+
+/******* Single Post CSS *******/
+
+.single {
+    position: relative;
+    padding: 15px 0;
+}
+
+.single .single-content {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.single .single-content img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.single .single-tags {
+    margin: -5px -5px 41px -5px;
+    font-size: 0;
+}
+
+.single .single-tags a {
+    margin: 5px;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a4c70;
+    border: 1px solid #4a4c70;
+}
+
+.single .single-tags a:hover {
+    color: #ffffff;
+    background: #3f115a;
+    border-color: #3f115a;
+}
+
+.single .single-bio {
+    margin-bottom: 45px;
+    padding: 30px;
+    background: #f3f6ff;
+    display: flex;
+}
+
+.single .single-bio-img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.single .single-bio-img img {
+    width: 100%;
+    border: 15px solid #ffffff;
+}
+
+.single .single-bio-text {
+    padding-left: 30px;
+}
+
+.single .single-bio-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.single .single-bio-text p {
+    margin: 0;
+}
+
+.single .single-related {
+    margin-bottom: 45px;
+}
+
+.single .single-related h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.single .related-slider {
+    position: relative;
+    margin: 0 -15px;
+    width: calc(100% + 30px);
+}
+
+.single .related-slider .post-item {
+    margin: 0 15px;
+}
+
+.single .post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.single .post-item .post-img {
+    width: 100%;
+    max-width: 80px;
+}
+
+.single .post-item .post-img img {
+    width: 100%;
+}
+
+.single .post-item .post-text {
+    padding-left: 15px;
+}
+
+.single .post-item .post-text a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.single .post-item .post-text a:hover {
+    color: #3f115a;
+}
+
+.single .post-item .post-meta {
+    display: flex;
+    margin-top: 8px;
+}
+
+.single .post-item .post-meta p {
+    display: inline-block;
+    margin: 0;
+    padding: 0 3px;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.single .post-item .post-meta p a {
+    margin-left: 5px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.single .related-slider .owl-nav {
+    position: absolute;
+    width: 90px;
+    top: -55px;
+    right: 15px;
+    display: flex;
+}
+
+.single .related-slider .owl-nav .owl-prev,
+.single .related-slider .owl-nav .owl-next {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4a4c70;
+    background: #3f115a;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.single .related-slider .owl-nav .owl-prev:hover,
+.single .related-slider .owl-nav .owl-next:hover {
+    color: #3f115a;
+    background: #4a4c70;
+}
+
+.single .single-comment {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.single .single-comment h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.single .comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.single .comment-child {
+    list-style: none;
+}
+
+.single .comment-body {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.single .comment-img {
+    width: 60px;
+}
+
+.single .comment-img img {
+    width: 100%;
+    border-radius: 0;
+}
+
+.single .comment-text {
+    padding-left: 15px;
+    width: calc(100% - 60px);
+}
+
+.single .comment-text h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.single .comment-text span {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.single .comment-text .btn {
+    padding: 3px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a4c70;
+    background: #dddddd;
+    border-radius: 0;
+}
+
+.single .comment-text .btn:hover {
+    background: #3f115a;
+}
+
+.single .comment-form {
+    position: relative;
+}
+
+.single .comment-form h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.single .comment-form form {
+    padding: 30px;
+    background: #f3f6ff;
+}
+
+.single .comment-form form .form-group:last-child {
+    margin: 0;
+}
+
+.single .comment-form input,
+.single .comment-form textarea {
+    border-radius: 0;
+}
+
+.single .comment-form input:focus,
+.single .comment-form textarea:focus {
+    border-color: #3f115a;
+}
+
+
+<!-- Single Post Start/Our story-->
+        <div class="single" id="our-story">
+            <div class="container">       
+                <div class="row">                                    
+                    <div class="single-content">
+                        <div class="container">
+                            <div class="section-header text-center">
+                                <p>Our Story</p>
+                                <h2>The Spark of Change</h2>
+                            </div>
+                        </div>                                              
+                        <p>
+                            The vision for the Impact for Good Foundation (IFG) began with a group of dedicated individuals who recognized the need for a foundation that prioritized sustainable development, community empowerment, and social equity. 
+                        </p>
+                        <p>
+                            Stacy Waruguru Muriithi, a civic leader and passionate advocate for climate action, gathered a small group of like-minded individuals, including Loise Atieno and Navrouze Desouza Odhiambo, to explore how they could make a meaningful impact.
+                        </p>
+                        <p>
+                            Drawing inspiration from similar movements across Africa, Stacy and her team envisioned a foundation deeply committed to uplifting vulnerable communities through locally led initiatives.
+                        </p>
+                        <h3>IFG Is Born</h3>
+                        <p>
+                            IFG was officially registered as a community-driven organization by its founding members, supported by leaders in Kenya’s financial and social sectors.
+                        </p>
+                        <p>
+                            With early support from community partners and an initial contribution from Stacy’s and Navrouze’s own families, IFG began with a modest start but a powerful mission: to create sustainable opportunities for economic empowerment, address climate change, and advocate for gender equality.
+                        </p>
+                        <p>
+                            By reaching out to communities in Kenya's 47 counties and beyond, IFG continues to partner with individuals and groups who share the vision of long-term positive change.
+                        </p>
+                        <p>
+                            With each new initiative, from educational programs to climate advocacy, IFG embodies its commitment to creating lasting impacts and building resilient communities.
+                        </p>
+
+                        <h4>Join the Movement</h4>
+                        <p>
+                            You can be a part of the change by supporting IFG’s climate action initiatives. Your donation will go directly towards funding sustainable solutions and ensuring that vulnerable communities can continue to thrive despite the challenges of climate change.
+                        </p>
+                        <p>
+                            Stay connected with us on social media to follow our progress and learn more about how you can contribute to our mission of creating a better future for all.
+                        </p>    
+                    </div>    
+
+                        <div class="single-tags">
+                            <a href="#">Climate Action</a>
+                            <a href="#">Sustainability</a>
+                            <a href="#">Community Impact</a>
+                            <a href="#">Grassroots Initiatives</a>
+                        </div>                               
+               </div>
+            </div>
+        <!-- Single Post End/Our story-->

@@ -29,7 +29,7 @@
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
-                <a href="index" class="navbar-brand">IFG-F</a>
+                <a href="index" class="navbar-brand">IFG</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -112,14 +112,14 @@
             <h2>Fundraise with Us</h2>
             <div>
                 <h3>What It Means</h3>
-                <p>Fundraising with IFG-F means becoming a critical part of our mission to support communities in need, fostering change across various areas, including climate resilience, healthcare, education, and gender empowerment. Your efforts raise not only financial resources but also awareness about these causes, expanding our reach and impact.</p>
+                <p>Fundraising with IFG means becoming a critical part of our mission to support communities in need, fostering change across various areas, including climate resilience, healthcare, education, and gender empowerment. Your efforts raise not only financial resources but also awareness about these causes, expanding our reach and impact.</p>
                 <h3 style="margin-top: 1rem">How You Can Get Involved</h3>
                 <div class="impact-list>
                     <h3 style="color: #E6007E; margin-bottom: 1rem">We offer multiple ways for individuals, groups, and organizations to raise funds:</h3>
                     <ul style="margin-left: 1.5rem;">
                         <li style="margin-bottom: 0.5rem">Host a Community Event: Organize events such as walks, charity sales, or auctions in your area to bring people together around a shared goal.</li>
                         <li style="margin-bottom: 0.5rem">Social Media Campaigns: Create digital fundraisers on social media, rallying friends and followers to contribute to the cause.</li>
-                        <li style="margin-bottom: 0.5rem">Corporate Partnerships: If you’re part of an organization, consider a corporate partnership where a portion of sales or company-matched donations goes toward IFG-F’s projects.</li>
+                        <li style="margin-bottom: 0.5rem">Corporate Partnerships: If you’re part of an organization, consider a corporate partnership where a portion of sales or company-matched donations goes toward IFG’s projects.</li>
                         <li style="margin-bottom: 0.5rem">Crowdfunding Pages: Set up a dedicated crowdfunding page for a specific cause like education in Zanzibar or sustainable water systems in rural Kenya.</li>
                     </ul>
                 </div>
@@ -172,7 +172,7 @@
                             <h2>Our Head Office</h2>
                             <p><i class="fa fa-map-marker-alt"></i>Nairobi, Kenya</p>
                             <p><i class="fa fa-phone-alt"></i>+254 712 345 678</p>
-                            <p><i class="fa fa-envelope"></i>info@ifg-foundation.org</p>
+                            <p><i class="fa fa-envelope"></i>info@IFGoundation.org</p>
                             <div class="footer-social">
                                 <a class="btn btn-custom" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-custom" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -217,7 +217,7 @@
             <div class="container copyright">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>&copy; IFG-F, All Rights Reserved.</p>
+                        <p>&copy; IFG, All Rights Reserved.</p>
                     </div>
                     <div class="col-md-6">
                         <p>Designed By <a href="#">Leah Atieno</a></p>

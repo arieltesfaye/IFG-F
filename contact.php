@@ -30,7 +30,7 @@
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
-                <a href="index" class="navbar-brand">IFG-F</a>
+                <a href="index" class="navbar-brand">IFG</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -123,7 +123,7 @@
             <div class="container">
                 <div class="section-header text-center">
                     <p>Get In Touch</p>
-                    <h2>Contact IFG-F for Any Queries</h2>
+                    <h2>Contact IFG for Any Queries</h2>
                 </div>
                 <div class="contact-img">
                     <img src="img/contact.jpg" alt="Image">
@@ -165,7 +165,7 @@
                             <h2>Our Head Office</h2>
                             <p><i class="fa fa-map-marker-alt"></i>Nairobi, Kenya</p>
                             <p><i class="fa fa-phone-alt"></i>+254 712 345 678</p>
-                            <p><i class="fa fa-envelope"></i>info@ifg-foundation.org</p>
+                            <p><i class="fa fa-envelope"></i>info@IFGoundation.org</p>
                             <div class="footer-social">
                                 <a class="btn btn-custom" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-custom" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -210,7 +210,7 @@
             <div class="container copyright">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>&copy; IFG-F, All Rights Reserved.</p>
+                        <p>&copy; IFG, All Rights Reserved.</p>
                     </div>
                     <div class="col-md-6">
                         <p>Designed By <a href="#">Your Design Team</a></p>
