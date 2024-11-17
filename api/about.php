@@ -20,7 +20,7 @@
         <link href="path/to/owl.carousel.min.css">
         <link href="path/to/owl.theme.default.min.css">
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
     </head>
     <body>
         <!-- import header -->
@@ -117,7 +117,7 @@
                     </div>
                     
                     <div class="col-lg-6 text-center">
-                        <img src="img/mission-vision.jpg" class="img-fluid rounded" alt="Mission Vision Image">
+                        <img src="/img/mission-vision.jpg" class="img-fluid rounded" alt="Mission Vision Image">
                     </div>
                 </div>
                 

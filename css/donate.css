@@ -1672,55 +1672,148 @@ a:focus {
 }
 
 
-<!-- Single Post Start/Our story-->
-        <div class="single" id="our-story">
-            <div class="container">       
-                <div class="row">                                    
-                    <div class="single-content">
-                        <div class="container">
-                            <div class="section-header text-center">
-                                <p>Our Story</p>
-                                <h2>The Spark of Change</h2>
-                            </div>
-                        </div>                                              
-                        <p>
-                            The vision for the Impact for Good Foundation (IFG) began with a group of dedicated individuals who recognized the need for a foundation that prioritized sustainable development, community empowerment, and social equity. 
-                        </p>
-                        <p>
-                            Stacy Waruguru Muriithi, a civic leader and passionate advocate for climate action, gathered a small group of like-minded individuals, including Loise Atieno and Navrouze Desouza Odhiambo, to explore how they could make a meaningful impact.
-                        </p>
-                        <p>
-                            Drawing inspiration from similar movements across Africa, Stacy and her team envisioned a foundation deeply committed to uplifting vulnerable communities through locally led initiatives.
-                        </p>
-                        <h3>IFG Is Born</h3>
-                        <p>
-                            IFG was officially registered as a community-driven organization by its founding members, supported by leaders in Kenya’s financial and social sectors.
-                        </p>
-                        <p>
-                            With early support from community partners and an initial contribution from Stacy’s and Navrouze’s own families, IFG began with a modest start but a powerful mission: to create sustainable opportunities for economic empowerment, address climate change, and advocate for gender equality.
-                        </p>
-                        <p>
-                            By reaching out to communities in Kenya's 47 counties and beyond, IFG continues to partner with individuals and groups who share the vision of long-term positive change.
-                        </p>
-                        <p>
-                            With each new initiative, from educational programs to climate advocacy, IFG embodies its commitment to creating lasting impacts and building resilient communities.
-                        </p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Impact For Good Foundation</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Impact For Good Foundation" name="keywords">
+        <meta content="Impact For Good Foundation" name="description">
 
-                        <h4>Join the Movement</h4>
-                        <p>
-                            You can be a part of the change by supporting IFG’s climate action initiatives. Your donation will go directly towards funding sustainable solutions and ensuring that vulnerable communities can continue to thrive despite the challenges of climate change.
-                        </p>
-                        <p>
-                            Stay connected with us on social media to follow our progress and learn more about how you can contribute to our mission of creating a better future for all.
-                        </p>    
-                    </div>    
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
-                        <div class="single-tags">
-                            <a href="#">Climate Action</a>
-                            <a href="#">Sustainability</a>
-                            <a href="#">Community Impact</a>
-                            <a href="#">Grassroots Initiatives</a>
-                        </div>                               
-               </div>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- Template Stylesheet -->
+        <link href="/css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- import header -->
+        <?php
+        require('templates/navigation.php')
+        ?>
+
+
+        <!-- Causes Start -->
+        <div class="causes">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Our Causes</p>
+                    <h2>Empowering Communities Through Key Initiatives</h2>
+                </div>
+                <div class="owl-carousel causes-carousel">
+                    <div class="causes-item">
+                        <div class="causes-img">
+                            <img src="img/causes-1.jpg" alt="Image">
+                        </div>
+                        
+                        <div class="causes-text">
+                            <h3>Climate Action Initiatives</h3>
+                            <p>Supporting community-based climate action efforts to promote sustainable environmental practices.</p>
+                            <a class="learn-more" href="causes-detail">Learn More</a>
+                        </div>
+                        
+                    </div>
+                    <div class="causes-item">
+                        <div class="causes-img">
+                            <img src="img/causes-2.jpg" alt="Image">
+                        </div>
+                        
+                        <div class="causes-text">
+                            <h3>Gender Advocacy Programs</h3>
+                            <p>Championing gender equality and providing resources for women in marginalized communities.</p>
+                            <a class="learn-more" href="causes-detail">Learn More</a>
+                        </div>
+                        
+                    </div>
+                    <div class="causes-item">
+                        <div class="causes-img">
+                            <img src="img/causes-3.jpg" alt="Image">
+                        </div>
+                        
+                        <div class="causes-text">
+                            <h3>Education for Vulnerable Communities</h3>
+                            <p>Providing educational opportunities for children and women in underprivileged areas.</p>
+                            <a class="learn-more" href="causes-detail">Learn More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        <!-- Single Post End/Our story-->
+        </div>
+        <!-- Causes End -->
+
+        <!-- import footer -->
+        <?php
+        require('templates/footer.php')
+        ?>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/parallax/parallax.min.js"></script>
+        <script>
+            function name($) {
+                
+
+            // Causes carousel
+            $(".causes-carousel").owlCarousel({
+                autoplay: true,
+                animateIn: 'slideInDown',
+                animateOut: 'slideOutDown',
+                items: 1,
+                smartSpeed: 450,
+                dots: false,
+                loop: true,
+                responsive: {
+                    0:{
+                        items:1
+                    },
+                    576:{
+                        items:1
+                    },
+                    768:{
+                        items:2
+                    },
+                    992:{
+                        items:3
+                    }
+                }
+            });    
+            // Causes progress
+            $('.causes-progress').waypoint(function () {
+                $('.progress .progress-bar').each(function () {
+                    $(this).css("width", $(this).attr("aria-valuenow") + '%');
+                });
+            }, {offset: '80%'}); 
+        }
+
+            
+        </script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
+
+

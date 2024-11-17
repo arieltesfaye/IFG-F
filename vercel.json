@@ -17,7 +17,11 @@
       { "source": "/service", "destination": "/service.php" },
       { "source": "/single", "destination": "/single.php" },
       { "source": "/team", "destination": "/team.php" },
-      { "source": "/volunteer", "destination": "/volunteer.php" }
-    ]
+      { "source": "/volunteer", "destination": "/volunteer.php" },
+      { "source": "/(.*)", "destination": "/api/$1" }
+    ],
+    "static": {
+      "include": ["css", "img", "js"]
+    }
   }
   
